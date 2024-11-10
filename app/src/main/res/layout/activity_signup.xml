@@ -1,0 +1,44 @@
+<!-- activity_signup.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/email_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/password_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <RadioGroup
+        android:id="@+id/user_type_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radio_customer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer" />
+
+        <RadioButton
+            android:id="@+id/radio_vendor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vendor" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Signup" />
+</LinearLayout>
